@@ -1,0 +1,47 @@
+:host {
+    display: block;
+    width: 100%;
+  }
+  
+  .logo {
+    margin: 0;
+  }
+  
+  a:hover {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .mat-primary {
+    background: #4a4a4a;
+    color: white;
+  }
+  .mat-toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  
+  .app-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 8px 16px;
+  }
+  .spacer {
+    flex: 1 1 auto;
+  }
+  
+  .logout {
+    background-color: transparent;
+    border: 0;
+    color: white;
+  }
+  
+  button:focus,
+  button:active {
+      outline: none;
+  }
+  
