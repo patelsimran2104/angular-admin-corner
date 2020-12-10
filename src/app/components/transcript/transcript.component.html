@@ -1,1 +1,28 @@
-<p>transcript works!</p>
+<section>
+  <div>
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Date</th>
+          <th scope="col">Application#</th>
+          <th scope="col">Enrollment No.</th>
+          <th scope="col">Number of Copies</th>
+          <th scope="col">Semesters</th>
+          <th scope="col">Status</th>
+          <th scope="col">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let transcript of transcripts">
+          <td>{{ transcript.displayDate }}</td>
+          <th scope="row">{{ transcript.application_no }}</th>
+          <td>{{ transcript.enrollment_no }}</td>
+          <td>{{ transcript.number_of_copies }}</td>
+          <td>{{ transcript.semesters }}</td>
+          <td><span class="badge" [class]="transcript.status">{{ transcript.status | uppercase }}</span></td>
+          <td><button class="btn btn-secondary" (click)="viewTranscript(transcript.application_no)">Open</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>

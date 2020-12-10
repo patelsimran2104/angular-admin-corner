@@ -1,0 +1,98 @@
+section {
+  padding: 25px;
+  margin: 30px auto;
+  max-width: 800px;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  position: relative;
+}
+
+.header {
+  padding: 20px;
+  text-align: center;
+}
+
+.thumbnail-container {
+  display: flex;
+  padding: 20px;
+}
+
+.tile {
+  width: 50%;
+  text-align: center;
+  height: 64px;
+  background: #ececec;
+  margin-right: 12px;
+  border-radius: 6px;
+  border: 2px solid #ececec;
+}
+
+.tile.active {
+  background: white;
+}
+
+.tile:hover {
+  cursor: pointer;
+  box-shadow: 0 0 2px 0px #868686;
+}
+
+.tile-title {
+  font-size: 16px;
+  line-height: 64px;
+  margin: 0;
+}
+
+.process-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 40px;
+  border: 1px solid #ced4d9;
+  border-radius: 8px;
+  margin-top: 40px;
+}
+
+.sub-label {
+  color: #6b6b6b;
+}
+
+.form-check {
+  margin-bottom: 1rem;
+}
+
+.semesters,
+.copies {
+  max-width: 200px;
+}
+
+.actions {
+  position: relative;
+}
+
+.badge {
+  font-size: 100%;
+}
+
+.submitted {
+  color: #fff;
+  background-color: #6c757d;
+}
+
+.inprocess {
+  color: #212529;
+  background-color: #ffc107;
+}
+
+.approved {
+  color: #fff;
+  background-color: #28a745;
+}
+
+.rejected {
+  color: #fff;
+  background-color: #dc3545;
+}
+
+.close-btn {
+  position: absolute;
+  right: 20px;
+}

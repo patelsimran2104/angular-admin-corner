@@ -1,0 +1,23 @@
+.badge {
+  font-size: 100%;
+}
+
+.submitted {
+  color: #fff;
+  background-color: #6c757d;
+}
+
+.inprocess {
+  color: #212529;
+  background-color: #ffc107;
+}
+
+.approved {
+  color: #fff;
+  background-color: #28a745;
+}
+
+.rejected {
+  color: #fff;
+  background-color: #dc3545;
+}

@@ -1,0 +1,25 @@
+<section>
+  <h2>Application <span class="close-btn"><button class="btn btn-danger" (click)="close()">Close</button></span></h2>
+  <div class="data-container">
+    <div class="detail-row">
+      <p>Application No: {{ applicationStatus.applicationNumber }}</p>
+      <p>Status: <span class="badge" [class]="applicationStatus.status.toLowerCase()">{{ applicationStatus.status }}</span></p>
+    </div>
+    <div class="detail-row">
+      <p>Enrollment No: {{ applicationStatus.enrollmentNo }}</p>
+      <p>Application Type: Transcript</p>
+    </div>
+    <div class="detail-row">
+      <p>Submission Date: {{ applicationStatus.displayDate }}</p>
+    </div>
+    <div class="detail-row">
+      <p>Number of Copies: {{ applicationStatus.numberOfCopies }}</p>
+      <p>Semesters: {{ applicationStatus.semesters }}</p>
+    </div>
+    <div class="form-group actions">
+      <button type="button" class="btn" (click)="startProcess()">Start Progress</button>
+      <button class="btn btn-secondary" (click)="approve()">Approve</button>
+      <button class="btn btn-danger" (click)="reject()">Reject</button>
+  </div>
+  </div>
+</section>
