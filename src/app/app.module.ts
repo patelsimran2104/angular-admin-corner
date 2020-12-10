@@ -1,4 +1,3 @@
-import { LoginComponent } from './components/login/login.component';
 import { ResultComponent } from './components/result/result.component';
 import { TranscriptComponent } from './components/transcript/transcript.component';
 import { MaterialModule } from './material.module';
@@ -19,8 +18,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     LayoutComponent,
     HeaderComponent,
     TranscriptComponent,
-    ResultComponent,
-    LoginComponent
+    ResultComponent
   ],
   imports: [
     BrowserModule,
